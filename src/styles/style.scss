@@ -1,0 +1,55 @@
+.card{
+    background: transparent;
+    border: 0;
+    img{
+        border-radius: 20px 20px 20px 20px;
+        overflow: hidden;
+        box-shadow: 0px 2px 18px 0px rgb(0 0 0 / 30%);
+        position: relative;
+        z-index: 2;
+        width: 450px;
+        margin: 0 auto;
+    }
+  &.boxBehaind{
+      &__left{
+        &::after{
+            content: '';
+            position: absolute;
+            display: block;
+            width: 250px;
+            height: 250px;
+            background-color:#2aaf4a;
+            border-radius: 20px 20px 20px 20px;
+            z-index: 1;
+            top: -30px;
+            left: -30px;
+        }
+      }
+      &__right{
+        &::after{
+            content: '';
+            position: absolute;
+            display: block;
+            width: 250px;
+            height: 250px;
+            background-color:#2aaf4a;
+            border-radius: 20px 20px 20px 20px;
+            z-index: 1;
+            top: -30px;
+            right: -30px;
+        }
+      }
+  }
+}
+
+.navbar.bg-theme {
+    background: #121612 !important;
+    a{
+        color: white;
+    }
+}
+footer {
+    background-color: black;
+    // height: 100%;
+    color: white;
+}
