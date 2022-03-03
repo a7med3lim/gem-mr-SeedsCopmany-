@@ -1,36 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <div class="container-fluid">
-    <form class="row g-3" action="mail.php" method="post" enctype="multipart/form-data">
-        <div class="col-md-6">
-          <label for="id1" class="form-label">Email</label>
-          <input type="email" class="form-control" id="id1">
-        </div>
+  <div class="container-fluid">
+    <form class="row row-cols-2 g-3" method="post" action="mail.php">
+      <div class="col">
+        <label>Your name (required)</label>
+        <input class="form-control" type="text" placeholder="Your Name" name="name" >
 
-        <div class="col-12">
-          <label for="id2" class="form-label">Address 2</label>
-          <input type="text" class="form-control" id="id2" placeholder="Apartment, studio, or floor">
-        </div>
+      </div>
+      <div class="col">
+        <label>Email </label>
+        <input class="form-control" type="email" placeholder="email@domian.com" name="email">
 
-        <div class="col-md-6">
-          <label for="id3" class="form-label">City</label>
-          <input type="text" class="form-control" id="id3">
-        </div>
+      </div>
+      <div class="col">
+        <label>Phone Number (required) </label>
+        <input type="text" class="form-control" placeholder="(+20) 00-000-0000" name="phonenumber">
 
 
-        <div class="col-12">
-          <button type="submit" class="btn btn-primary">Sign in</button>
-        </div>
-      </form>
-    </div>
+      </div>
+      <div class="col cell">
+        <label>Message </label>
+        <textarea class="form-control" id="" cols="5" rows="5" name="msg" style="resize: none;"></textarea>
+
+      </div>
+      <div class="col">
+        <button class="button align-right" type="submit" name="send_message_btn" id="send_message_btn">Send</button>
+      </div>
+    </form>
+  </div>
+  <script src="index.js"></script>
 </body>
+
 </html>
