@@ -23,7 +23,7 @@ if (isset($_POST['send_message_btn'])) {
 	<p> ".$msg." </p>
 	</body>
 	</html>";
-	if (mail('info@smart-extensions.com', $subject, $message, $headers)) {
+	if (mail('ahmed.ali@infasme.com', $subject, $message, $headers)) {
 		header("Location: contactus.html?mailsend");
 	}else{
 		echo "Failed to send email. Please try again later";
